@@ -1,0 +1,33 @@
+{
+  "name": "g",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "predev": "npm run build -- --watch & npm run pack -- --watch &",
+    "dev": "nodejs lib/index.js",
+    "vers": "standard-version",
+    "pack": "webpack --config=webpack.config.babel.js",
+    "test": "mocha --compilers js:babel-core/register --recursive --require ./test/setup.js test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G43riko/G.git"
+  },
+  "author": "Gabriel Csollei <gcsolle@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G43riko/G/issues"
+  },
+  "homepage": "https://github.com/G43riko/G#readme",
+  "dependencies": {
+    "babel-register": "^6.24.1",
+    "express": "^4.15.3",
+    "standard-version": "^4.0.0",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-register": "^6.24.1"
+  }
+}
