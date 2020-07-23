@@ -24,7 +24,7 @@
   "dependencies": {
     "babel-register": "^6.24.1",
     "express": "^4.15.3",
-    "standard-version": "^4.0.0",
+    "standard-version": "^8.0.2",
     "webpack": "^2.6.1"
   },
   "devDependencies": {
